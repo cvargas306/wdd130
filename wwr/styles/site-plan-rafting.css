@@ -5,13 +5,13 @@
     --accent1-color: #9ee493;
     --accent2-color: #daf781;
 
-    --heading-font: 'DancingScript', cursive;
+    --heading-font: 'Dancing Script', cursive;
     --paragraph-font: 'Nunito', sans-serif;
 
-    --nav-background-color: var(--primary-color)
-    --nav-link-color: var(--accent2-color)
-    --nav-hover-link-color:var(--secondary-color)
-    --nav-hover-background-color:var(--accent1-color)
+    --nav-background-color: #86bbaa;
+    --nav-link-color: #2f4858;
+    --nav-hover-link-color: #9ee493;
+    --nav-hover-background-color:#daf781;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 header {
@@ -51,7 +51,7 @@ nav a:link, nav a:visited {
     color: var(--nav-link-color);
 }
 
-nav a :hover{
+nav a:hover{
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-backgorund-color);
 }
