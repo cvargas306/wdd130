@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -42,6 +42,7 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+    position: relative;
 }
 
 main img {
@@ -63,7 +64,6 @@ footer {
 }
 
 /* Class Selectors */
-
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, .1); 
