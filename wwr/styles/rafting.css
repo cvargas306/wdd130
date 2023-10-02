@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Nunito:wght@200&display=swap');
+:root {
+    --main-color: #2f4858;
+    --secondary-color: #86bbaa;
+    --link-color: #9ee493;
+
+}
+
+h1, h2, h3, p {
+    font-family: 'Dancing Script', cursive;
+    color: var(--main-color);
+}
+
+
+a {
+    color: var(--link-color); 
+    text-decoration: none; 
+  }
+  
+  
+  body {
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  
+  
+  .hero {
+    position: relative; 
+  }
+  
+  .hero img {
+    display: block;
+    width: 100%; 
+    height: auto; 
+  }
+  
+  h1 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px; 
+  }
+  
+  article {
+    position: absolute; 
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px; 
+  }
+  
+  article img {
+    float: right; 
+    margin-left: 20px; 
+    max-width: 50%; /* Limit the image width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  
