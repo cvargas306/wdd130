@@ -6,57 +6,65 @@
 
 }
 
-h1, h2, h3, p {
+body {
     font-family: 'Dancing Script', cursive;
-    color: var(--main-color);
+    
+}
+
+h1, h2, h3, p {
+  color: var(--main-color); /* Apply text color */
+}
+
+.sociallinks a {
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 5px; /* Adjust this value to make the icons smaller */
+  height: 5px; /* Adjust this value to make the icons smaller */
+  margin-right: 5px;
+}
+
+body {
+  max-width: 900px; 
+  margin: 0 auto; 
 }
 
 
-a {
-    color: var(--link-color); 
-    text-decoration: none; 
-  }
+.hero {
+  position: relative; 
+}
   
   
-  body {
-    max-width: 1200px; 
-    margin: 0 auto; 
-  }
+h1 {
+  position: absolute; /* Position the h1 absolutely */
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Center the h1 vertically and horizontally */
+  color: var(--text-color); /* Apply text color */
+  background-color: rgba(0, 0, 0, 0.6); /* Background color with opacity */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
   
-  
-  .hero {
-    position: relative; 
-  }
-  
-  .hero img {
-    display: block;
-    width: 100%; 
-    height: auto; 
-  }
-  
-  h1 {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    background-color: rgba(255, 255, 255, 0.7); 
-    padding: 20px; 
-  }
-  
-  article {
-    position: absolute; 
-    top: 60%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    background-color: rgba(0, 0, 0, 0.7); 
-    padding: 20px; 
-  }
-  
-  article img {
-    float: right; 
-    margin-left: 20px; 
-    max-width: 50%; 
-    height: auto; 
-  }
+article {
+  position: absolute; /* Position the article absolutely */
+  top: 90%; /* Adjust as needed */
+  left: 70%; /* Adjust as needed */
+  transform: translateX(-50%); /* Center the article horizontally */
+  background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+  padding: 15px; /* Adjust padding as needed */
+}
+
+
+article img {
+  float: right; /* Float the image to the right */
+  margin-left: 30px; /* Adjust margin as needed */
+  max-width: 30%; /* Reduce the maximum width to 60% of the original size */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+
+
+
 
   
