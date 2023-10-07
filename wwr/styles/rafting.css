@@ -117,11 +117,11 @@ article img {
 }
 
 .history p:first-child {
-  order: 1; /* Add this */
+  order: 1; 
 }
 
 .history p:last-child {
-  order: 3; /* Add this */
+  order: 3; 
 }
 
 .pictures {
@@ -159,7 +159,7 @@ article img {
 }
 
 .pictures img {
-  max-width: 15%;
+  max-width: 100%;
   display: block;
   margin-bottom: 15px;
 }
