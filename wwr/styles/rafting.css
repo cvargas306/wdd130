@@ -27,13 +27,13 @@ header {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  background-color: var(--nav-hover-background-color); 
-  padding: 25px;
+  background-color: var(--nav-background-color); 
+  padding: 20px;
 }
 
 
 header img {
-  width: 180px; 
+  width: 190px; 
   height: auto; 
   margin-right: 10px; 
 }
@@ -71,7 +71,8 @@ h1, h2, h3, p {
   height: auto;
   
 }
-  
+
+
 h1 {
   position: absolute; 
   top: 5%; 
@@ -99,47 +100,66 @@ article img {
   height: auto; 
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.history {
+  position: relative;
+  background-color: #daf781;
+  padding: 20px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
 }
 
-section.images {
+.history img {
+  margin-left: 15px; 
+  max-width: 15%; 
+  height: auto; 
+  order: 2;
+}
+
+.history p:first-child {
+  order: 1; /* Add this */
+}
+
+.history p:last-child {
+  order: 3; /* Add this */
+}
+
+.pictures {
+  position: relative;
+  background-color: #86bbaa;
+  padding: 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pictures.images {
   display: flex;
   justify-content: space-between;
 }
 
-section.images img {
+.pictures.images img {
   max-width: 100%;
   height: auto;
   border: 1px solid #ddd;
 }
 
-section.images figcaption {
+.pictures.images figcaption {
   font-size: 1rem;
   color: var(--secondary-color);
 }
 
-section.images figure {
+.pictures.images figure {
   text-align: center;
 }
 
-section h2 {
+.pictures h2 {
   font-size: 2rem;
-  color: var(--primary-color);
-}
-
-section p {
-  font-size: 1.2rem;
   color: var(--secondary-color);
-  max-width: 80%;
-  margin: 0 auto 20px;
 }
 
-section img {
-  max-width: 30%;
+.pictures img {
+  max-width: 15%;
   display: block;
   margin-bottom: 15px;
 }
