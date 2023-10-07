@@ -23,10 +23,9 @@ body {
 }
 
 header {
-  font-family: 'Dancing Script', cursive;
-  height: auto; 
-  display: flex;
-  justify-content: space-between; 
+  font-family: 'Dancing Script', cursive; 
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
   background-color: var(--nav-hover-background-color); 
   padding: 25px;
@@ -41,9 +40,10 @@ header img {
 
 header nav {
   background-color: var(--nav-hover-link-color);
-  width: fit-content;
   font-size: 2.1rem;
   display: flex; 
+  justify-content: flex-end; /* Align navigation to the right */
+  align-items: center;
 }
 
 header nav a {
@@ -74,7 +74,7 @@ h1, h2, h3, p {
   
 h1 {
   position: absolute; 
-  top: 60%; 
+  top: 5%; 
   left: 50%; 
   transform: translate(-50%,-50%); 
   color: var(--accent1-color); 
@@ -84,7 +84,7 @@ h1 {
   
 article {
   position: absolute; 
-  top: 70%; 
+  top: 20%; 
   left: 50%; 
   transform: translateX(-50%); 
   background-color: rgba(255, 255, 255, 0.8); 
@@ -94,20 +94,49 @@ article {
 
 article img {
   float: right; 
-  margin-left: 30px; 
+  margin-left: px; 
   max-width: 30%; 
   height: auto; 
 }
 
-section figure {
-  text-align: center; 
-  margin-bottom: 15px; 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
+section.images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
 
-section figcaption {
-  font-size: 14px; 
-  color: var(--secondary-color); 
+section.images img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+section.images figcaption {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+section.images figure {
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+section p {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  max-width: 80%;
+  margin: 0 auto 20px;
 }
 
 section img {
@@ -116,13 +145,22 @@ section img {
   margin-bottom: 15px;
 }
 
+footer {
+  background-color: var(--nav-hover-background-color);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end; 
+}
 
 .sociallinks a {
   text-decoration: none;
+  margin-left: 10px;
 }
 
 .sociallinks img {
-  width: 50px; 
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd; 
 }
 
 
