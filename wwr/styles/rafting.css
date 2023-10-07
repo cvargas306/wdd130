@@ -42,7 +42,7 @@ header nav {
   background-color: var(--nav-hover-link-color);
   font-size: 2.1rem;
   display: flex; 
-  justify-content: flex-end; /* Align navigation to the right */
+  justify-content: flex-end; 
   align-items: center;
 }
 
