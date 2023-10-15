@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
+
   font-family: 'Merriweather', serif;
   font-size: 1.2em;
   color: #333;
@@ -72,12 +74,12 @@ input [type="checkbox"] {
 
 .column1 {
   grid-template-columns: 3fr 1fr;
-  margin: 0.5rem 0; /* Adjust the margin as needed */
+  margin: 0.5rem 0; 
 }
 
 .column2 {
   grid-template-columns: 1fr 2fr;
-  margin: 0.5rem 0; /* Adjust the margin as needed */
+  margin: 0.5rem 0; 
 }
   
 button {
