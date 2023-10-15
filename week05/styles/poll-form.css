@@ -6,9 +6,7 @@
     box-sizing: border-box;
 }
 
-
 body {
-
   font-family: 'Merriweather', serif;
   font-size: 1.2em;
   color: #333;
@@ -16,7 +14,7 @@ body {
 }
 
 header {
-  margin: 0;
+  margin: 0 auto;
   width: 650px;
 }
 
@@ -37,9 +35,9 @@ form {
   display: grid;
 }
   
-fieldset {
+.fieldset {
   display: grid;
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
   margin: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
@@ -52,7 +50,6 @@ legend {
 }
 
 label {
-  font-weight: bold;
   text-align: right;
   padding-right: 1rem;
 }
@@ -60,6 +57,27 @@ label {
 input, select, textarea {
   padding: 0.5rem;
   font-size: 1.1rem;
+}
+
+input [type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0; /* Adjust the margin as needed */
+}
+
+.column2 {
+  grid-template-columns: 1fr 2fr;
+  margin: 0.5rem 0; /* Adjust the margin as needed */
 }
   
 button {
