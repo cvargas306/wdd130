@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 body {
 
   font-family: 'Merriweather', serif;
@@ -53,9 +52,22 @@ legend {
 
 label {
   font-weight: bold;
-  text-align: right;
+  text-align: left;
   padding-right: 1rem;
 }
+
+article {
+  width: fit-content;
+  position: relative;
+  color: #fff; 
+  font-size: 10px;
+  top: 50%; 
+  left: 20%; 
+  transform: translate(-50%, -50%); 
+  background-color: #333; 
+  padding: 5px; 
+}
+
 
 input, select, textarea {
   padding: 0.5rem;
