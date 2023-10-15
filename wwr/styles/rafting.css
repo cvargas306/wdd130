@@ -164,6 +164,68 @@ article img {
   margin-bottom: 15px;
 }
 
+form {
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: var(--accent1-color);
+  display: grid;
+}
+  
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+legend {
+  padding: 0.5rem;
+  color: navy;
+  font-size: 1.3em;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+  padding-right: 1rem;
+}
+
+article {
+  width: fit-content;
+  position: relative;
+  color: #fff; 
+  font-size: 10px;
+  top: 50%; 
+  left: 20%; 
+  transform: translate(-50%, -50%); 
+  background-color: #333; 
+  padding: 5px; 
+}
+
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+  
+button {
+  margin: 1rem;
+  background-color: var(--nav-link-color);
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
 footer {
   background-color: var(--nav-hover-background-color);
   padding: 10px;
