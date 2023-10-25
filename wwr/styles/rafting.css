@@ -83,11 +83,11 @@ h1 {
   padding: 30px 50px; 
 }
   
-article {
+.about-article {
   position: absolute; 
-  top: 20%; 
+  top: 50%; 
   left: 50%; 
-  transform: translateX(-50%); 
+  transform: translate(-50%, -50%); 
   background-color: rgba(255, 255, 255, 0.8); 
   padding: 15px; 
 }
@@ -194,7 +194,7 @@ label {
   padding-right: 1rem;
 }
 
-article {
+.contact-article {
   width: fit-content;
   position: relative;
   color: #fff; 
@@ -224,6 +224,80 @@ button {
 
 button:hover {
   background-color: var(--primary-color);
+}
+
+
+.trips{
+  position: relative;
+  background-color: #daf781;
+  padding: 20px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.trips img {
+  margin-left: 15px; 
+  max-width: 15%; 
+  height: auto; 
+  order: 2;
+}
+
+.trips-pictures {
+  position: relative;
+  background-color: #86bbaa;
+  padding: 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trips-pictures.images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trips-pictures.images img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.trips-pictures.images figcaption {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.trips-pictures.images figure {
+  text-align: center;
+}
+
+.trips-pictures h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.trips-pictures img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+table {
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: var(--accent1-color);
+  display: grid;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  padding: 1rem;
+  text-align: left;
 }
 
 footer {
